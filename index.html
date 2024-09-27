@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratio Algeria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    
+    <!-- EmailJS Library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("X9foNB2tvWYK6t-k1"); // Clé publique d'EmailJS
+        })();
+    </script>
+</head>
+<body>
+    <header style="background-color: #2f2f2f;">
+        <div data-aos="flip-up"><img src="img/Fichier 6 1logo.png"></div>
+    </header>
+
+    <!-- Début du premier div -->
+    <div class="div1">
+        <div class="div11">
+            <div class="divimg"><img src="img/banner.png">
+            <span>Balancing <br>Business Brilliance</span></div>
+        </div>
+        <div class="div111">
+            <p class="p1">We are Ratio of course</p>
+            <p class="p11">We</p>
+        </div>
+    </div>
+    <!-- Fin du premier div -->
+
+    <!-- Début du deuxième div -->
+    <div class="div2">
+        <div class="div21" data-aos="fade-right">
+            <p class="p2">Do you want <br>to work with us?</p>
+            <p class="p22">Get your quote now.</p>
+        </div>
+        <div class="div22" data-aos="fade-up"><img src="img/freepik-export-20240713001647Dsd8 1.png"></div>
+        <div class="div23">
+            <form id="contact-form" onsubmit="return sendMail(event);">
+                <label>Name *</label>
+                <input name="name" id="name" required maxlength="25" type="text">
+                
+                <label>Email *</label>
+                <input name="email" id="email" minlength="8" required maxlength="30" type="email">
+                
+                <label>Subject *</label>
+                <input name="subject" id="subject" maxlength="50" required type="text">
+                
+                <label>Order *</label>
+                <textarea name="order" id="order" maxlength="250" class="txt" required></textarea>
+                
+                <button type="submit" class="btn1">Let's talk <img src="img/Mode_Isolation.png"></button>
+            </form>
+        </div>
+    </div>
+    <!-- Fin du deuxième div -->
+
+    <footer style="position: relative;width: 100%;display: flex;justify-content: center;padding: 10px;background-color: #FAE5EF;">
+        <p>Ratio Algérie - All Rights Reserved</p>
+    </footer>
+
+    <!-- AOS Animation and JS files -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="upload.js"></script>
+    <script src="index.js"></script>
+    <script src="sending.js"></script>
+</body>
+</html>
